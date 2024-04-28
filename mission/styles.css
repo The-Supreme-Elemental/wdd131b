@@ -2,18 +2,34 @@ body {
     font-size: 20px;
     display: flex;
     max-width: 600px;
+    margin: auto;
+    width: 50%;
+    padding: 10px 350px;
+    line-height: 1.5;
 }
 
 
 header {
     text-transform: uppercase;
     margin: auto;
+    letter-spacing: 2px;
+    /* width: 2px; */
 }
 h2 {
     color: #006eb6;
+    font-size: smaller;
 }
 
 
 #mission {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+
 }

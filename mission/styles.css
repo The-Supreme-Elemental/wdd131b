@@ -1,3 +1,10 @@
 body {
     font-size: 20px;
 }
+
+header {
+    text-transform: uppercase;
+}
+h2 {
+    color: #006eb6;
+}

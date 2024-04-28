@@ -1,10 +1,19 @@
 body {
     font-size: 20px;
+    display: flex;
+    max-width: 600px;
 }
+
 
 header {
     text-transform: uppercase;
+    margin: auto;
 }
 h2 {
     color: #006eb6;
+}
+
+
+#mission {
+    text-align: center;
 }

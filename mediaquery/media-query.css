@@ -1,3 +1,21 @@
 body {
     font-family: 'Roboto';
 }
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    border-style: groove;
+}
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    border-style: groove;
+}
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border-style: groove;
+}

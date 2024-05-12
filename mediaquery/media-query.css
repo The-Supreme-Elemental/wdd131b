@@ -8,6 +8,7 @@ header {
     border-color: #84dccf;
     border-width: 5px;
     padding: 3px;
+    background-color: #027078;
 
 }
 main {
@@ -20,6 +21,7 @@ main {
     border-color: #84dccf;
     border-width: 5px;
     padding: 3px;
+    background-color: #027078;
 }
 footer {
     max-width: 640px;
@@ -28,4 +30,21 @@ footer {
     border-color: #84dccf;
     border-width: 5px;
     padding: 3px;
+    background-color: #027078;
+}
+
+#scripture {
+    background-color: white;
+    padding: 3px;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        background-color: black;
+        color: white
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }

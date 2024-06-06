@@ -12,6 +12,7 @@
 
 header, footer {
     background-color: blueviolet;
+    color: white;
 }
 header h2 {
     color: white;
@@ -35,7 +36,7 @@ nav a{
 .gallery {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 .gallery img {
@@ -54,4 +55,11 @@ button {
 }
 #navigation-toggle {
     justify-items: center;
+}
+
+@media (min-width: 1000px){
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }

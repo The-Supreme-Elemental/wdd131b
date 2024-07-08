@@ -18,6 +18,12 @@ header h2 {
     color: white;
     font-family: var(--secondary-font);
 }
+a:link {
+    color: var(--secondary-color)
+}
+a:visited {
+    color: var(--accent-color);
+}
 main {
     
 }

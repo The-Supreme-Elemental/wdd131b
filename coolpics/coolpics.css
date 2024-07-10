@@ -5,13 +5,13 @@
 --accent-color: #f45b69;
 --text-dark: #333;
 --text-light: #ebebeb;
---primary-font: Arial, Helvetica,sans-serif;
---secondary-font: Mooli, san-serif;
+--primary-font: Mooli, san-serif;
+--secondary-font: Arial, Helvetica,sans-serif;
 }
 
 
 header, footer {
-    background-color: blueviolet;
+    background-color: var(--primary-color);
     color: white;
 }
 header h2 {
@@ -39,33 +39,51 @@ nav a{
 #current_work {
     font-family: Arial, Helvetica, sans-serif;
 }
-.gallery {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-.gallery img {
+img {
     max-width: 100%;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    
 }
 button {
-    background-color: transparent;
     border: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    margin: 10px 15px;
     cursor: pointer;
-
     color: inherit;
     font-size: 30px;
+    font-family: var(--primary-font);
 }
+
 #navigation-toggle {
     justify-items: center;
 }
+.gallery {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 20px;
+ }
 
+@media (min-width: 700px){
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
 @media (min-width: 1000px){
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+    }
 
+    .navigation {
+        display: flex;
+
+    }
+
+    button {
+        display: none;
     }
 }

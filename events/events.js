@@ -3,11 +3,54 @@ let tasks = [];
 
 function renderTasks(tasks) {
   const todoList = document.getElementById("todoList");
+  todoList.innerHTML = "";
+
+  tasks.forEach((task) => {
+    const completedTask = task.completed ? "strike" : "";
+
+    const taskHtml = 
+    `<li ${task.completed ? 'class="strike"' : ""}>
+     <p>${task.detail}</p>
+     <div>
+       <span data-function="delete">❎</span>
+       <span data-function="complete">✅</span>
+     </div>
+    </li>`;
+
+    todoList.innerHTML += taskHtml;
+  });
+
+
+
+  
   // get the list element from the DOM
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
 }
 
+
+const submitButton = document.getElementById("submitButton");
+
+submitButton.addEventListener("click", newTask);
+
 function newTask() {
+
+  const todoInput = document.getElementById("todo");
+  const taskValue = todoInput.Value.trim();
+
+  if(!taskValue) {
+    return;
+  }
+
+  const newTask = {
+    detail: taskValue,
+    completed: false,
+  }
+
+  tasks.push(newTask);
+
+  todoInput.value = "";
+
+  renderTasks(tasks);
   // get the value entered into the #todo input
   // add it to our arrays tasks
   // render out the list
